@@ -1,16 +1,21 @@
-start_date: 2018-01-01
-end_date: 2025-10-31
-universe: []
-start_capital: 100000
-rebalance: weekly
-target_vol: 0.10
+# config.yaml
+data_path: ""          # path to training CSV, empty uses synthetic data
+eval_data_path: ""     # path for evaluation
+universe_size: 5
+features_dim: 5
 max_gross_leverage: 2.0
-transaction_cost_bps: 10
-slippage_pct: 0.001
-data_cache: data/
-processed_dir: data/
-results_dir: results/
-methods: [equal, minvar, meanvar]
-base_slippage_pct: 0.001
-margin_rate_annual: 0.03
-per_asset_max: 0.5
+per_asset_max: 1.0
+transaction_cost: 0.001
+slippage_coeff: 0.001
+margin_interest: 0.0005
+start_cash: 1.0
+
+# RL training params
+learning_rate: 3e-4
+gamma: 0.99
+entropy_coef: 0.01
+batch_size: 64
+tensorboard_log: "./logs/"
+output_model_path: "./ppo_market"
+output_env_norm: "./env_norm.pkl"
+equity_curve_path: "./equity_curve.png"
