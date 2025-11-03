@@ -34,5 +34,7 @@ Default assumptions
 - Weekly rebalancing (close), start capital = 100,000 USD
 - Universe = top cryptos by market cap (configurable)
 - Max gross leverage = 2x, long-short allowed
+
+NEW (11/2/25): Updating RL model with a market simulator environment, training off-the-shelf continous RL policy, and evaluation, backtesting, and metrics. 
 - Transaction cost default = 0.1% round-trip
 - Target portfolio volatility = 10% annualized
