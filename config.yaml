@@ -1,5 +1,5 @@
 # config.yaml
-data_path: ""          # path to training CSV, empty uses synthetic data
+data_path: "./data/daily_sentiment.csv"          # path to training CSV, empty uses synthetic data
 eval_data_path: ""     # path for evaluation
 universe_size: 5
 features_dim: 5
@@ -11,11 +11,13 @@ margin_interest: 0.0005
 start_cash: 1.0
 
 # RL training params
-learning_rate: 3e-4
+learning_rate: 0.0003
 gamma: 0.99
 entropy_coef: 0.01
 batch_size: 64
 tensorboard_log: "./logs/"
-output_model_path: "./ppo_market"
-output_env_norm: "./env_norm.pkl"
-equity_curve_path: "./equity_curve.png"
+output_model_path: "./models/ppo_sentiment"
+output_env_norm: ".models/env_norm.pkl"
+equity_curve_path: "./logs/"
+
+
