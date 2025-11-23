@@ -38,3 +38,9 @@ Default assumptions
 - Target portfolio volatility = 10% annualized
 
 NEW (11/2/25): Updating RL model with a market simulator environment, training off-the-shelf continous RL policy, and evaluation, backtesting, and metrics. 
+
+
+Improvements (11/22):
+1) Improve meta-learning
+2) Integrate cross-entropy techniques
+3) Compare (Reinforcement) to SENT (Natural Language Programming) and TDA (Optimization / Gradien-Descent)
